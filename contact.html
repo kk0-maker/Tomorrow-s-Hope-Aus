@@ -155,15 +155,85 @@
         .social-links img:hover {
             transform: scale(1.2);
         }
+		
+		.menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+			position: absolute;
+			right: 5%;
+			top: center;
+        }
+
+        .menu-toggle div {
+            width: 30px;
+            height: 3px;
+            background-color: #000;
+            margin: 5px 0;
+        }
+		
+		@media (max-width: 768px) {
+			.head-container {
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			
+			.nav-links {
+				display: none;
+                flex-direction: column;
+                align-items: flex-end;
+				position: absolute;
+                top: 100px;
+				right: 5%;
+				background: white;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				padding: 1rem;
+				width: 10rem;
+				z-index: 1000;
+			}
+			
+			.nav-links.active {
+				display: flex;
+			}
+			
+			.menu-toggle {
+				display: flex;
+				z-index: 1100;
+			}
+			
+			.hero-box {
+				width: 100%;
+			}
+			
+			.hero-text-overlay {
+				font-size: 1.2rem;
+				width: 90%;
+			}
+		}
     </style>
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
 </head>
 <body>
 
 <header class="header-container">
     <div class="logo-container">
         <img src="Logo-01.jpg" alt="Tomorrow's Hope Logo">
-        <div class="logo-text">Tomorrow's Hope</div>
+        <a href="index.html" class="logo-text">Tomorrow's Hope</a>
     </div>
+		<div class="menu-toggle">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
