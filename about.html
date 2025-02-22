@@ -36,6 +36,7 @@
             color: #000;
             text-decoration: none;
             transition: color 0.3s;
+			margin-right: 1.4rem;
         }
 
         .logo-container .logo-text:hover {
@@ -48,6 +49,7 @@
             gap: 1.5rem;
             padding: 0;
             margin: 0;
+			margin-left: 0.5rem;
 			font-size: 1.2rem;
         }
 
@@ -58,39 +60,31 @@
             transition: color 0.3s;
         }
 
-        .nav-links a:hover {
-            color: #007bff;
-        }
-
         .hero-box {
-			background: url('Fwd Fest 5.jpg');
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-			background-color: #fff;
+			background: url('Fwd Fest 5.jpg') center/cover no-repeat;
             width: 90%;
-            height: auto;
-            padding-top: 40%; 
+            max-width: 2000px;
+            height: 500px;
             margin: 2rem auto;
-			border-radius: 15px;
+            border-radius: 15px;
             text-align: center;
-            color: #fff;
             position: relative;
         }
 
         .hero-text-overlay {
             background: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-			padding: 1rem;
+            padding: 1rem;
             font-size: 2rem;
-			width: 80%;
-			max-width: 2000px;
-			margin: 0 auto;
+            width: 80%;
+            max-width: 90%;
+            color: white;
             position: absolute;
-            top: 80%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+		
 		.text-block-who-join {
 			margin: 0 auto;
 			max-width: 1800px;
@@ -100,11 +94,12 @@
 		}
 		
 		.text-block {
-            flex: 1;
-            text-align: left;
+            margin: 0 auto;
+			max-width: 1800px;
+			text-align: left;
             line-height: 1.6;
 			font-size: 1.5rem;
-			margin: auto 5rem;
+			
         }
 
         .content-section {
@@ -149,7 +144,81 @@
         .social-links img:hover {
             transform: scale(1.2);
         }
+		
+		.menu-toggle {
+			display: none;
+			flex-direction: column;
+			cursor: pointer;
+			position: absolute;
+			right: 5%;
+			top: center;
+		}
+		
+		.menu-toggle div {
+			width: 30px;
+			height: 3px;
+			background-color: #000;
+			margin: 5px 0;
+		}
+		
+		@media (max-width: 768px) {
+			.head-container {
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			
+			.nav-links {
+				display: none;
+				flex-direction: column;
+				align-items: flex-end;
+				position: absolute;
+				top: 100px;
+				right: 5%;
+				background: white;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				padding: 1rem;
+				width: 10rem;
+				z-index: 1000;
+			}
+			
+			.nav-links.active {
+				display: flex;
+			}
+			
+			.menu-toggle {
+				 display: flex;
+				 z-index: 1100;
+			}
+			
+			.hero-box {
+				width: 100%;
+                height: auto;
+                padding: 4rem 0;
+			}
+			
+			.hero-text-overlay {
+				position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 90%;
+                max-width: 100%;
+                margin: 1rem auto;
+				font-size: 1.2rem;
+			}
+		}
     </style>
+	
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
@@ -159,6 +228,12 @@
             <img src="Logo-01.jpg" alt="Tomorrow's Hope Logo">
             <a href="index.html" class="logo-text">Tomorrow's Hope</a>
         </div>
+		<div class="menu-toggle">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -178,25 +253,32 @@
     <section class="content-section">
         <div class="text-block-who-join">
             <h2>Who We Are</h2>
-            <p>Tomorrow's Hope was founded in June 2023 myself (Kit). I myself have struggled a lot with my own mental health. Struggling with depression from 12 years old, and having been in therapy since I was 8 - I found that I struggle to communicate my thoughts and feelings to my parents. 
-			<br> <br>
-			After doing some more research, and talking to a few friends and mental health professionals I found that it's really common to have difficulty communicating with your parent. Or indeed vice versa, a parent talking to their young person. That's where Tomorrow's Hope comes in.
+            <p>Many young people struggle to communciate their thoughts and emotions with their guardians, and often guardians can face challenges in connecting with their young people. This communication gap can make it 
+			especially difficult to navigate mental health challenges effectively.
 			<br><br>
-			The Co-founder of Tomorrow's Hope (and my good friend) Michael, came on board in December 2023, after we noticed similarities in experieces, passions, and drive to make this tool accessible to everyone. </p>
+			I experienced this firsthand. I've battled depression since the age of 12 and have been in therapy since I was 8, yet I often found it hard to express my feelings. Especially to my parents. Through research 
+			with friends and mental health professionals, I realised just how widespread the issue is.
+			<br><br>
+			That's why I founded Tomorrow's Hope in June 2023 - to bridge this gap and create a tool to act as the first point of contact, making communication easier. In December 2023, my good friend Michael joined me as 
+			the Co-Founder after we recognised our shared experiences, passions, and commitment to making this resource accessible to everyone.</p>
         </div>
     </section>
 
     <section class="content-section">
         <div class="text-block">
             <h2>Our Mission</h2>
-            <p>Our mission is to provide accessible and innovative mental health resources that empower individuals to take charge of their well-being. We aim to build a supportive community where everyone feels heard and valued.</p>
-        </div>
+            <p>At Tomorrow's Hope, our mission is to empower young people to take the first step in their mental health journey by providing a safe, accessible, and supportive space for open conversations.</p>
+			<br>
+			We recognise that many teens struggle to communicate their thoughts and emotions, making it difficult to seek help or connect with those who care about them. That's why Tomorrow's Hope serves as a first point
+			of contact - helping young people process their emotions, build confidence in expressing themselves, and develop the conversation skills they need to engage with parents, guardians, or mental health professionals.</p>
+		</div>
     </section>
 
     <section class="content-section">
         <div class="text-block">
             <h2>Our Vision</h2>
-            <p>We envision a world where mental health is prioritised, talked about without stigma. A world where not only every young person has access to the tools they need to thrive; but also parent/guardians and carers have the resources they need. Through collaboration, education, and technology, we aim to create a lasting impact on youth mental health care. </p>
+            <p>We envision a world where mental health is prioritised, talked about without stigma. A world where not only every young person has access to the tools they need to thrive; but also parent/guardians and carers 
+			have the resources they need. Through collaboration, education, and technology, we aim to create a lasting impact on youth mental health care. </p>
         </div>
     </section>
 
