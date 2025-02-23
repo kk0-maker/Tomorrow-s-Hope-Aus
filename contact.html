@@ -27,7 +27,7 @@
         .logo-container img {
             width: 5rem;
             height: auto;
-			margin-right: 1.5rem;
+	    margin-right: 1.5rem;
         }
 
         .logo-container .logo-text {
@@ -64,11 +64,11 @@
 
         .hero-box {
             background: url('DALL·E 2025-02-04 15.35.42.jpg');
-			background-size: cover;
-			background-position: center;
-			background-repeat; no-repeat;
-			width: 90%;
-			height: auto;
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat; no-repeat;
+	    width: 90%;
+	    height: auto;
             margin: 2rem auto;
             padding: 4rem 0;
             border-radius: 15px;
@@ -145,7 +145,7 @@
             margin-top: 2rem;
         }
 		
-		.social-links img {
+	.social-links img {
             width: 30px;
             height: auto;
             margin: 0 5px;
@@ -156,13 +156,13 @@
             transform: scale(1.2);
         }
 		
-		.menu-toggle {
+	.menu-toggle {
             display: none;
             flex-direction: column;
             cursor: pointer;
-			position: absolute;
-			right: 5%;
-			top: center;
+	    position: absolute;
+	    right: 5%;
+	    top: center;
         }
 
         .menu-toggle div {
@@ -172,44 +172,49 @@
             margin: 5px 0;
         }
 		
-		@media (max-width: 768px) {
-			.head-container {
-				flex-direction: column;
-				justify-content: space-between;
-			}
+  @media (max-width: 768px) {
+	.head-container {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.logo-text {
+		margin-right: 0.5rem;
+		
+	}
 			
-			.nav-links {
-				display: none;
+	.nav-links {
+		display: none;
                 flex-direction: column;
                 align-items: flex-end;
-				position: absolute;
+		position: absolute;
                 top: 100px;
-				right: 5%;
-				background: white;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-				padding: 1rem;
-				width: 10rem;
-				z-index: 1000;
-			}
+		right: 5%;
+		background: white;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		padding: 1rem;
+		width: 10rem;
+		z-index: 1000;
+	}
 			
-			.nav-links.active {
-				display: flex;
-			}
+	.nav-links.active {
+		display: flex;
+	}
 			
-			.menu-toggle {
-				display: flex;
-				z-index: 1100;
-			}
+	.menu-toggle {
+		display: flex;
+		z-index: 1100;
+	}
 			
-			.hero-box {
-				width: 100%;
-			}
+	.hero-box {
+		width: 100%;
+	}
 			
-			.hero-text-overlay {
-				font-size: 1.2rem;
-				width: 90%;
-			}
-		}
+	.hero-text-overlay {
+		font-size: 1.2rem;
+		width: 90%;
+	}
+}
     </style>
 	<script>
         document.addEventListener("DOMContentLoaded", function() {
