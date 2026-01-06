@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow's Hope - Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="Logo-01.jpg" alt="Tomorrow's Hope Logo">
+            <a href="index.html" class="logo-text">Tomorrow's Hope</a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero-box" style="background-image: url('DALL·E 2025-02-02 11.48.24-2.jpg');">
+        <div class="hero-text-overlay">
+            <h1>Resources for Mental Health</h1>
+            <p>Explore curated guides, tips, and articles to support mental well-being.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block">
+            <h2>For Young People</h2>
+            <p>Find resources tailored to the challenges young people face today, from managing stress to building resilience.</p>
+            <ul class="resource-list">
+                <li><a href="https://www.verywellmind.com/top-school-stress-relievers-for-students-3145179" target="_blank" rel="noopener noreferrer">How to Deal with School Pressure</a></li>
+                <li><a href="https://www.mind.org.uk/for-young-people/feelings-and-experiences/confidence-and-self-esteem/" target="_blank" rel="noopener noreferrer">Building Confidence and Self-Esteem</a></li>
+                <li><a href="https://kidshealth.org/en/teens/understand-emotions.html" target="_blank" rel="noopener noreferrer">Understanding Your Emotions</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block">
+            <h2>For Parents and Guardians</h2>
+            <p>Support your teens effectively with these insightful resources for parents and guardians.</p>
+            <ul class="resource-list">
+                <li><a href="https://www.blackdoginstitute.org.au/education-services/schools/parents/talking-to-teens-about-mental-health/" target="_blank" rel="noopener noreferrer">Talking to Teens About Mental Health</a></li>
+                <li><a href="https://www.healthpartners.com.au/health/anxiety-and-depression-teens#:~:text=Some%20common%20indicators%20are%3A%20having%20negative%20thoughts%2C%20including,in%20academic%20performance.%20not%20feeling%20rested%20after%20sleep." target="_blank" rel="noopener noreferrer">Recognising Signs of Anxiety and Depression</a></li>
+                <li><a href="https://www.wellistic.com/blog/safe-space-for-teen-mental-health/" target="_blank" rel="noopener noreferrer">Creating a Supportive and Safe Home Environment</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block">
+            <h2>Discover More</h2>
+            <p>Dive deeper into our resource library and send us a message for resources on specific topics.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tomorrow's Hope. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/">
+                <img src="LinkedIn-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", function() {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

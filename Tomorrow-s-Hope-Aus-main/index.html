@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow's Hope - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="Logo-01.jpg" alt="Tomorrow's Hope Logo">
+            <a href="index.html" class="logo-text">Tomorrow's Hope</a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero-box" style="background-image: url('DALL·E 2024-12-22 16.15.56.jpg');">
+        <div class="hero-text-overlay">
+            <h1>Welcome to Tomorrow's Hope</h1>
+            <p>Empowering youth and families with innovative mental health resources and support.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block-about-join">
+            <h2>About Tomorrow's Hope</h2>
+            <p>Tomorrow's Hope is your go-to platform for improving mental health and well-being through technology and community support. We aim to make resources accessible to young people and their families in a safe, inclusive space.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="our-features">
+            <div class="text-block">
+                <h2>Our Features</h2>
+                <ul>
+                    <li>AI-powered insights for personalised mental health support</li>
+                    <li>Curated resources for teens and parents</li>
+                    <li>Interactive tools to improve emotional well-being</li>
+                </ul>
+            </div>
+            <div class="our-features-image">
+                <img src="DALL·E 2025-01-26 15.56.05.webp" alt="Features Icon">
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block-about-join">
+            <h2>Join Us</h2>
+            <p>Be a part of Tomorrow's Hope by exploring our resources or joining our user testing community to help us grow and improve!</p>
+            <a href="contact.html" class="cta-button">Get Involved</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tomorrow's Hope. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/">
+                <img src="LinkedIn-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", function() {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+</body>
+</html>

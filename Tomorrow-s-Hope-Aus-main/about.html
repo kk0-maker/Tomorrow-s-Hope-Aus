@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow's Hope - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="Logo-01.jpg" alt="Tomorrow's Hope Logo">
+            <a href="index.html" class="logo-text">Tomorrow's Hope</a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero-box" style="background-image: url('Fwd Fest 5.jpg');">
+        <div class="hero-text-overlay">
+            <h1>About Us</h1>
+            <p>Empowering youth and families with innovative mental health solutions.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block-who-join">
+            <h2>Who We Are</h2>
+            <p>Many young people struggle to communicate their thoughts and emotions with their guardians, and often guardians can face challenges in connecting with their young people. This communication gap can make it especially difficult to navigate mental health challenges effectively.</p>
+            <br><br>
+            <p>I experienced this firsthand. I've battled depression since the age of 12 and have been in therapy since I was 8, yet I often found it hard to express my feelings. Especially to my parents. Through research with friends and mental health professionals, I realised just how widespread the issue is.</p>
+            <br><br>
+            <p>That's why I founded Tomorrow's Hope in June 2023 - to bridge this gap and create a tool to act as the first point of contact, making communication easier. In December 2023, my good friend Michael joined me as the Co-Founder after we recognised our shared experiences, passions, and commitment to making this resource accessible to everyone.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block">
+            <h2>Our Mission</h2>
+            <p>At Tomorrow's Hope, our mission is to empower young people to take the first step in their mental health journey by providing a safe, accessible, and supportive space for open conversations.</p>
+            <br>
+            <p>We recognise that many teens struggle to communicate their thoughts and emotions, making it difficult to seek help or connect with those who care about them. That's why Tomorrow's Hope serves as a first point of contact - helping young people process their emotions, build confidence in expressing themselves, and develop the conversation skills they need to engage with parents, guardians, or mental health professionals.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block">
+            <h2>Our Vision</h2>
+            <p>We envision a world where mental health is prioritised, talked about without stigma. A world where not only every young person has access to the tools they need to thrive; but also parent/guardians and carers have the resources they need. Through collaboration, education, and technology, we aim to create a lasting impact on youth mental health care.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="text-block-who-join">
+            <h2>Join Us</h2>
+            <p>Be a part of Tomorrow's Hope by exploring our resources or joining our user testing community to help us grow and improve!</p>
+            <a href="contact.html" class="cta-button">Get Involved</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tomorrow's Hope. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/">
+                <img src="LinkedIn-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener("click", function() {
+                    navLinks.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+</body>
+</html>
