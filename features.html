@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomorrow's Hope - Features</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Explore Tomorrow's Hope features — mood tracking, AI assistant, safety plans, and more tools for youth mental health.">
+    <title>Features — Tomorrow's Hope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
-<body>
+<body data-page="features.html" class="page-wrapper">
+
     <header class="header-container">
         <div class="logo-container">
-            <img src="images/Logo-01.jpg" alt="Tomorrow's Hope Logo">
+            <img src="images/Logo-01.jpg" alt="Tomorrow's Hope logo">
             <a href="index.html" class="logo-text">Tomorrow's Hope</a>
         </div>
-        <div class="menu-toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -30,68 +32,59 @@
         </ul>
     </header>
 
-    <section class="hero-box" style="background-image: url('images/mental-health-2.jpg');">
-        <div class="hero-text-overlay">
-            <h1>Explore Our Features</h1>
-            <p>Discover how Tomorrow's Hope supports youth mental health discussions through innovative tools and resources.</p>
-        </div>
-    </section>
+    <main>
+        <section class="hero" style="background-image: url('images/mental-health-2.jpg');">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Platform</span>
+                <h1>Our features</h1>
+                <p>Tools and resources designed to support youth mental health discussions in a safe, approachable way.</p>
+            </div>
+        </section>
 
-    <section class="content-section">
-        <div class="text-block">
-            <h2>Feature Highlights</h2>
-            <p>Our platform offers unique tools designed to improve your mental health and well-being. Here are some of our key features:</p>
-        </div>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <h2>Weekly Mood Tracker</h2>
-                <p>Track your weekly mood and gain insights to improve your emotional well-being.</p>
-                <img src="images/Features 1.png" alt="Weekly Mood Tracker">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Feature highlights</h2>
+                    <p>Unique tools designed to improve mental health and well-being for young people and their families.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Weekly Mood Tracker</h3>
+                        <p>Track your weekly mood and gain insights to improve your emotional well-being.</p>
+                        <img src="images/Features 1.png" alt="Weekly Mood Tracker screenshot">
+                    </div>
+                    <div class="feature-item">
+                        <h3>AI Assistant</h3>
+                        <p>Engage with our AI Assistant for personalised support tailored to your mental health needs.</p>
+                        <img src="images/Features 2.png" alt="AI Assistant screenshot">
+                    </div>
+                    <div class="feature-item">
+                        <h3>My Safety Plan</h3>
+                        <p>Create your own safety plan to help you navigate challenging times.</p>
+                        <img src="images/Features 3.png" alt="My Safety Plan screenshot">
+                    </div>
+                </div>
             </div>
-            <div class="feature-item">
-                <h2>AI Assistant</h2>
-                <p>Engage with our AI Assistant for personalised support tailored to your mental health needs.</p>
-                <img src="images/Features 2.png" alt="AI Assistant">
-            </div>
-            <div class="feature-item">
-                <h2>My Safety Plan</h2>
-                <p>Create your own safety plan to help you navigate challenging times.</p>
-                <img src="images/Features 3.png" alt="My Safety Plan">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="content-section">
-        <div class="text-block">
-            <h2>Try Our Features Today</h2>
-            <p>Contact us for current user-testing opportunities.</p>
-            <br><br>
-            <p>Experience the tools and resources that are helping to shape better mental health for young people and families.</p>
-            <a href="contact.html" class="cta-button">Get Started</a>
-        </div>
-    </section>
+        <section class="cta-band">
+            <h2>Try our features today</h2>
+            <p>Contact us for current user-testing opportunities and experience the tools shaping better mental health for young people and families.</p>
+            <a href="contact.html" class="cta-button">Get started</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Tomorrow's Hope. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/">
-                <img src="images/LinkedIn-icon.png" alt="LinkedIn">
-            </a>
+        <div class="footer-inner">
+            <p>&copy; 2026 Tomorrow's Hope. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/LinkedIn-icon.png" alt="">
+                </a>
+            </div>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navLinks = document.querySelector(".nav-links");
-            
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener("click", function() {
-                    navLinks.classList.toggle("active");
-                });
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
