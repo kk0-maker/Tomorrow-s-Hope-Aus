@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Tomorrow's Hope — join our user testing community or request mental health resources.">
+    <title>Contact — Tomorrow's Hope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body data-page="contact.html" class="page-wrapper">
+
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="images/Logo-01.jpg" alt="Tomorrow's Hope logo">
+            <a href="index.html" class="logo-text">Tomorrow's Hope</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('images/DALL·E 2025-02-04 15.35.42.jpg');">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Get in touch</span>
+                <h1>We'd love to hear from you</h1>
+                <p>Your feedback and participation help shape Tomorrow's Hope.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-section">
+                <div class="section-header">
+                    <h2>Join our community</h2>
+                    <p>Sign up to test Tomorrow's Hope and contribute to the future of youth mental health.</p>
+                </div>
+
+                <form action="https://formspree.io/f/xkgnjdbo" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your preferred name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age-group">Age group</label>
+                        <select id="age-group" name="ageGroup" required>
+                            <option value="" disabled selected>Select your age group</option>
+                            <option value="young-person">Young person (12–18)</option>
+                            <option value="parent/guardian">Parent / guardian</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">How can we help you?</label>
+                        <textarea id="feedback" name="feedback" required placeholder="Are you looking for further resources, information on user testing, or something else?"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Submit interest</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 Tomorrow's Hope. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/LinkedIn-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
