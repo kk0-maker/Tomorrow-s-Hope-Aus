@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Tomorrow's Hope — register interest as a parent of a neurodivergent teenager or as a clinical advisor.">
+    <title>Contact — Tomorrow's Hope for Parents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+<body data-page="contact.html" class="page-wrapper">
+
+    <div class="site-banner">
+        For parents &amp; guardians of neurodivergent teenagers aged 12–18.
+        <a href="../index.html">View main site</a>
+    </div>
+
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="../images/Logo-01.jpg" alt="Tomorrow's Hope logo">
+            <a href="index.html" class="logo-text">Tomorrow's Hope</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="platform.html">The Platform</a></li>
+            <li><a href="philosophy.html">Our Approach</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('../images/DALL·E 2025-02-04 15.35.42.jpg');">
+            <div class="hero__content">
+                <span class="hero__eyebrow">Get in touch</span>
+                <h1>Help shape Tomorrow's Hope</h1>
+                <p>Register your interest as a parent, guardian, or clinical professional contributing to the development of neuroaffirming family support.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-section">
+                <div class="section-header">
+                    <h2>Register your interest</h2>
+                    <p>We're building Tomorrow's Hope in collaboration with families and qualified professionals. Tell us how you'd like to be involved.</p>
+                </div>
+
+                <form action="https://formspree.io/f/xkgnjdbo" method="POST">
+                    <input type="hidden" name="site_version" value="parents-neurodivergent">
+
+                    <div class="form-group">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">I am a</label>
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>Select your role</option>
+                            <option value="parent-guardian">Parent or guardian of a neurodivergent teenager</option>
+                            <option value="counsellor">Counsellor</option>
+                            <option value="psychologist">Psychologist</option>
+                            <option value="occupational-therapist">Occupational therapist</option>
+                            <option value="speech-pathologist">Speech pathologist</option>
+                            <option value="social-worker">Social worker</option>
+                            <option value="other-allied-health">Other allied health professional</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">How would you like to be involved?</label>
+                        <textarea id="interest" name="interest" required placeholder="e.g. user testing, reviewing resources, clinical advisory, general feedback…"></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button">Submit interest</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 Tomorrow's Hope. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/tomorrows-hope-youth-mentalhealth/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="../images/LinkedIn-icon.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
